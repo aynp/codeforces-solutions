@@ -1,0 +1,49 @@
+//@aryanpathania
+#include <bits/stdc++.h>
+#define MOD 1'000'000'007
+//#define MOD = 998'244'353
+#define int int64_t
+typedef long long ll;
+typedef long double ld;
+using namespace std;
+
+void solve(){
+    std::string a,b;
+    std::cin >> a >> b;
+    if(a.length() != b.length()){
+        std::cout << "NO" << '\n';
+        return;
+    }
+    std::vector<int> pos;
+    for (int i = 0; i < a.length(); i++){
+        if(a[i] != b[i]){
+            pos.push_back(i);
+        }
+    }
+    if(pos.size()!=2){
+        std::cout << "NO" << '\n';
+        return;
+    }
+    swap(a[pos[0]],a[pos[1]]);
+    if(a==b){
+        std::cout << "YES" << '\n';
+        return;
+    }
+    std::cout << "NO" << '\n';
+    return;
+}
+
+int32_t main(){
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
+    solve();
+
+    return 0;
+}//main
+//DONE
+
+// Aryan Pathania
+// National Institute of Technology, Hamirpur
+// Codeforces - https://codeforces.com/profile/aryanpathania
+// LinkedIn https://www.linkedin.com/in/aryanpathania03/
