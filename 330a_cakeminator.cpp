@@ -104,7 +104,6 @@ int32_t main(){
 */
 //DONE
 
-
 // Aryan Pathania
 // National Institute of Technology, Hamirpur
 // Codeforces - https://codeforces.com/profile/aryanpathania
